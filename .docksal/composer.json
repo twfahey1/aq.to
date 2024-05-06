@@ -1,0 +1,25 @@
+{
+    "name": "tylerfahey/docksal-pack",
+    "description": "Scaffolds Docksal into your Drupal site.",
+    "authors": [
+        {
+            "name": "Tyler Fahey",
+            "email": "twfahey1@gmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "drupal-scaffold": {
+          "file-mapping": {
+            "[project-root]/.docksal/docksal.env": "docksal.env",
+            "[project-root]/.docksal/docksal.yml": "docksal.yml",
+            "[project-root]/.vscode/settings.json": "vscode/default.settings.json",
+            "[web-root]/sites/default/settings.local.php": {
+                "mode": "replace",
+                "path": "drupal/default.settings.local.php",
+                "overwrite": false
+            }
+          }
+        }
+      }
+}
