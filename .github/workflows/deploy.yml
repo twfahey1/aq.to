@@ -1,0 +1,38 @@
+name: Deploy
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup SSH
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          if_key_exists: replace
+          config: |
+            LogLevel=quiet
+            Host *
+            StrictHostKeyChecking=no
+            PasswordAuthentication no
+            PubkeyAuthentication yes
+            Host *.drush.in
+            StrictHostKeyChecking no
+          known_hosts: |
+            127.0.0.1
+      - name: Deploy
+        env:
+          SSH_USER: root
+          SSH_HOST: ${{ secrets.SERVER_IP_ADDRESS }}
+          SSH_PORT: 22
+          SERVER_APP_LOCATION: ${{ secrets.SERVER_APP_LOCATION }}
+        run: |
+          ssh $SSH_USER@$SSH_HOST -p$SSH_PORT -v <<EOF
+          whoami
+          # Switch to aqto-dev user with sudo
+          sudo -u aqto-dev bash <<CMD_EOF
+          # Execute commands as aqto-dev user
+          cd $SERVER_APP_LOCATION
+          git pull
+          CMD_EOF
+          EOF
