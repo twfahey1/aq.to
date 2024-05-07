@@ -22,17 +22,12 @@ jobs:
             127.0.0.1
       - name: Deploy
         env:
-          SSH_USER: root
+          SSH_USER: aqto-dev
           SSH_HOST: ${{ secrets.SERVER_IP_ADDRESS }}
           SSH_PORT: 22
           SERVER_APP_LOCATION: ${{ secrets.SERVER_APP_LOCATION }}
         run: |
           ssh $SSH_USER@$SSH_HOST -p$SSH_PORT -v <<EOF
-          whoami
-          # Switch to aqto-dev user with sudo
-          sudo -u aqto-dev bash <<CMD_EOF
-          # Execute commands as aqto-dev user
           cd $SERVER_APP_LOCATION
           git pull
-          CMD_EOF
           EOF
