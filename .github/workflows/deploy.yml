@@ -30,4 +30,5 @@ jobs:
           ssh $SSH_USER@$SSH_HOST -p$SSH_PORT -v <<EOF
           cd $SERVER_APP_LOCATION
           git pull
+          composer install --no-progress --no-interaction
           EOF
