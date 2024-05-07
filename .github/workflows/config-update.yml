@@ -1,0 +1,68 @@
+name: Enhanced LAMP Setup with PHP 8.2 for Drupal
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  setup_lamp_environment:
+    runs-on: ubuntu-latest
+    env:
+      path_to_site_codebase_on_runner: ${{ github.workspace }}  # Base path where repo is cloned
+
+    services:
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: drupal
+        ports:
+          - 3306:3306
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Apache and PHP 8.2
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y software-properties-common
+          sudo add-apt-repository ppa:ondrej/php
+          sudo apt-get update
+          sudo apt-get install -y apache2 libapache2-mod-php8.2 php8.2-mysql
+          sudo sed -i 's#/var/www/html#${{ env.path_to_site_codebase_on_runner }}/web#g' /etc/apache2/sites-available/000-default.conf
+          sudo sed -i 's#/var/www/html#${{ env.path_to_site_codebase_on_runner }}/web#g' /etc/apache2/sites-available/default-ssl.conf
+          sudo systemctl restart apache2
+
+      - name: Create settings.local.php
+        run: |
+          cat <<EOF > ${{ env.path_to_site_codebase_on_runner }}/web/sites/default/settings.local.php
+          <?php
+          \$databases['default']['default'] = array(
+            'driver' => 'mysql',
+            'database' => 'drupal',
+            'username' => 'root',
+            'password' => 'root',
+            'host' => '127.0.0.1',
+            'port' => '3306',
+            'prefix' => '',
+            'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+            'driver' => 'mysql',
+          );
+          EOF
+          chmod 755 ${{ env.path_to_site_codebase_on_runner }}/web/sites/default/settings.local.php
+
+      - name: Install Composer Dependencies
+        run: |
+          cd ${{ env.path_to_site_codebase_on_runner }}/web
+          composer install --no-progress
+
+      - name: Initialize Drupal Installation
+        run: |
+          cd ${{ env.path_to_site_codebase_on_runner }}/web
+          ./vendor/bin/drush si -y
+          sudo chown -R www-data:www-data ${{ env.path_to_site_codebase_on_runner }}/web
+
+      - name: Start Apache Service
+        run: sudo systemctl start apache2
