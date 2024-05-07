@@ -9236,12 +9236,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twfahey1/aqto_layout_builder_styles.git",
-                "reference": "042897e6c5766f0eb5670226d5012f116e99ab8c"
+                "reference": "b4a8fa6f617adf75f40b1a38d92b2dfe45f4a20b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twfahey1/aqto_layout_builder_styles/zipball/042897e6c5766f0eb5670226d5012f116e99ab8c",
-                "reference": "042897e6c5766f0eb5670226d5012f116e99ab8c",
+                "url": "https://api.github.com/repos/twfahey1/aqto_layout_builder_styles/zipball/b4a8fa6f617adf75f40b1a38d92b2dfe45f4a20b",
+                "reference": "b4a8fa6f617adf75f40b1a38d92b2dfe45f4a20b",
                 "shasum": ""
             },
             "default-branch": true,
@@ -9266,7 +9266,7 @@
                 "issues": "https://github.com/twfahey1/aqto_layout_builder_styles/issues",
                 "source": "https://github.com/twfahey1/aqto_layout_builder_styles/tree/main"
             },
-            "time": "2024-05-07T15:18:24+00:00"
+            "time": "2024-05-07T17:57:55+00:00"
         },
         {
             "name": "twfahey1/aqto_page",
