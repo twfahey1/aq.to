@@ -1,8 +1,6 @@
 name: Enhanced LAMP Setup with PHP 8.2 for Drupal
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   setup_lamp_environment:
