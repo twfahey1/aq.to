@@ -53,13 +53,12 @@ jobs:
 
       - name: Install Composer Dependencies
         run: |
-          cd ${{ env.path_to_site_codebase_on_runner }}/web
-          composer install --no-progress
+          cd ${{ env.path_to_site_codebase_on_runner }}
+          composer install --no-progress --no-interaction
 
       - name: Initialize Drupal Installation
         run: |
           cd ${{ env.path_to_site_codebase_on_runner }}
-          composer install --no-progress --no-interaction
           ./vendor/bin/drush si -y
           sudo chown -R www-data:www-data ${{ env.path_to_site_codebase_on_runner }}/web
 
