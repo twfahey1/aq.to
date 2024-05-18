@@ -10,8 +10,8 @@ jobs:
       path_to_site_codebase_on_runner: ${{ github.workspace }}  # Base path where repo is cloned
 
     services:
-      mysql:
-        image: mysql:5.7
+      mariadb:
+        image: mariadb:10.5
         env:
           MYSQL_ROOT_PASSWORD: root
           MYSQL_DATABASE: drupal
