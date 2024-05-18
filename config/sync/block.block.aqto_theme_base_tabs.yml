@@ -1,0 +1,20 @@
+uuid: c82f9162-6c5d-406b-bf1b-146fd36ba10b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - aqto_theme_base
+id: aqto_theme_base_tabs
+theme: aqto_theme_base
+region: content
+weight: 2
+provider: core
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: ''
+  label_display: ''
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

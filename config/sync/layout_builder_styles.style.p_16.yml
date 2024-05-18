@@ -1,0 +1,14 @@
+uuid: 7f029d97-c65c-4473-a309-2f39aaa88633
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: TLzYgVjKLj_XtwzPKt24eetUO-iZPaLQxxEOZpKZJtk
+id: p_16
+label: p-16
+classes: p-16
+type: section
+group: padding
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

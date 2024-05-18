@@ -1,0 +1,23 @@
+uuid: 1212aa70-653a-4d0e-bddf-750f1f3dc5c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.aqto_page
+  module:
+    - layout_builder
+_core:
+  default_config_hash: khbTFKzftL1HOSww7BIbXhz7wx6kDqntL6FugrUr7EU
+id: node.aqto_page.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: aqto_page
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

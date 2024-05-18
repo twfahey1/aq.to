@@ -1,0 +1,22 @@
+uuid: 34b73260-0841-4367-bcc0-5908312d4c8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - aqto_blocks
+  theme:
+    - aqto_theme_base
+id: aqto_theme_base_
+theme: aqto_theme_base
+region: content
+weight: 0
+provider: aqto_blocks
+plugin: aqto_blocks_aqto_menu_block
+settings:
+  id: aqto_blocks_aqto_menu_block
+  label: ''
+  label_display: '0'
+  provider: aqto_blocks
+  menu_to_use: main
+  menu_title: '[site:name]'
+visibility: {  }

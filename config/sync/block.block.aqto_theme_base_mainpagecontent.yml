@@ -1,0 +1,20 @@
+uuid: 69feaa31-7383-4b67-80ab-80bad64c279e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aqto_theme_base
+id: aqto_theme_base_mainpagecontent
+theme: aqto_theme_base
+region: content
+weight: 4
+provider: core
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  label_display: visible
+  provider: system
+visibility: {  }

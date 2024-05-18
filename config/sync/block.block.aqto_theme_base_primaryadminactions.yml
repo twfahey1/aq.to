@@ -1,0 +1,18 @@
+uuid: 6e301679-054c-4941-b662-59732bac8fef
+langcode: en
+status: true
+dependencies:
+  theme:
+    - aqto_theme_base
+id: aqto_theme_base_primaryadminactions
+theme: aqto_theme_base
+region: content
+weight: 1
+provider: core
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: ''
+  label_display: ''
+  provider: core
+visibility: {  }

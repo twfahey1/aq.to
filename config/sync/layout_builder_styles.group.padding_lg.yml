@@ -1,0 +1,12 @@
+uuid: 8ceec4d7-cf13-49ad-9013-636f7e9522f2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: n4J7lHZkO6u3TlfWP03QEmauFmEzmLWB_aJVgttQxSc
+id: padding_lg
+label: 'Padding lg'
+multiselect: multiple
+form_type: checkboxes
+required: false
+weight: 0

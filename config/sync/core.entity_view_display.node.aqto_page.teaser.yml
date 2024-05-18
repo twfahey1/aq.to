@@ -1,0 +1,26 @@
+uuid: 5bbad0e2-a83e-4059-ae16-e1cf9bbf507f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.aqto_page.layout_builder__layout
+    - node.type.aqto_page
+  module:
+    - user
+_core:
+  default_config_hash: EO-7O3-McoLDbJhxn6g8LkhfODF9BnzIfyWjMFpUSoA
+id: node.aqto_page.teaser
+targetEntityType: node
+bundle: aqto_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  display_breadcrumbs: true
+  display_page_title: true
+  layout_builder__layout: true

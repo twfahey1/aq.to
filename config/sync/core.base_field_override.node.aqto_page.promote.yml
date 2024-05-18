@@ -1,0 +1,24 @@
+uuid: b75ea1ee-8ba9-4585-878b-35bfce5ebee2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.aqto_page
+_core:
+  default_config_hash: EW5Pk5HY7ZGu8gQ3B-5NzBQUG-oYubuxUzpJxyhoWHE
+id: node.aqto_page.promote
+field_name: promote
+entity_type: node
+bundle: aqto_page
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

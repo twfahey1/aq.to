@@ -1,0 +1,20 @@
+uuid: 0b778628-2edd-4c9b-b480-66aae11b5527
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: Qk6x3M6EKNDY_vqKuxbMvKmX85JMpSW3y3gYzYcW20o
+name: 'Aqto Page'
+type: aqto_page
+description: 'The Aqto page provides a flexible foundation for site content.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

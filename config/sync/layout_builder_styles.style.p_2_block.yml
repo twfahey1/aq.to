@@ -1,0 +1,14 @@
+uuid: 7446a4a0-6ce3-42d3-8357-f002ca5178d7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: olb_nqiK5H4OmQwe9HfU5sTY382LvxWp0ZN1FbsJeJA
+id: p_2_block
+label: p-2
+classes: p-2
+type: component
+group: padding
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

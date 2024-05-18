@@ -1,0 +1,12 @@
+uuid: ea885127-cbff-4d07-b301-1e7834d6b817
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VKKdHJeDk8y3vi1vNV6jllWfX5erT0a_Xt6Y0GVQkhw
+id: padding
+label: Padding
+multiselect: multiple
+form_type: checkboxes
+required: false
+weight: 0
