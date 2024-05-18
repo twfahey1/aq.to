@@ -86,9 +86,7 @@ jobs:
 
       - name: Start Apache Service
         run: sudo systemctl start apache2
-      - name: Configure Git to Use SSH
-        run: |
-          git remote set-url origin git@github.com:${{ github.repository_owner }}/${{ github.repository }}.git
+
       - name: Sync Database and Update Config
         env:
           SSH_USER: aqto-dev
@@ -111,6 +109,8 @@ jobs:
           ./vendor/bin/drush cex -y
           git config --global user.name "aqto-auto"
           git config --global user.email "tyler@tylerfahey.com"
+          git remote set-url origin git@github.com:${{ github.repository }}.git
+          git remote -v
           git add .
           git commit -m "Update config from live"
           git push origin main
