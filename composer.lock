@@ -1705,17 +1705,17 @@
         },
         {
             "name": "drupal/commerce",
-            "version": "2.38.0",
+            "version": "2.39.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce.git",
-                "reference": "8.x-2.38"
+                "reference": "8.x-2.39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.38.zip",
-                "reference": "8.x-2.38",
-                "shasum": "3857000c3fa8c50189a3cabb0417ce06131d3e3f"
+                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.39.zip",
+                "reference": "8.x-2.39",
+                "shasum": "82fffeef53342ca880aeb8d7bca8d16a9d8cbeba"
             },
             "require": {
                 "commerceguys/intl": "^2.0.2",
@@ -1753,8 +1753,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.38",
-                    "datestamp": "1707150193",
+                    "version": "8.x-2.39",
+                    "datestamp": "1715862323",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1787,7 +1787,7 @@
         },
         {
             "name": "drupal/commerce_number_pattern",
-            "version": "2.38.0",
+            "version": "2.39.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_store": "*",
@@ -1796,8 +1796,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.38",
-                    "datestamp": "1707150193",
+                    "version": "8.x-2.39",
+                    "datestamp": "1715862323",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1830,7 +1830,7 @@
         },
         {
             "name": "drupal/commerce_order",
-            "version": "2.38.0",
+            "version": "2.39.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_number_pattern": "*",
@@ -1844,8 +1844,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.38",
-                    "datestamp": "1707150193",
+                    "version": "8.x-2.39",
+                    "datestamp": "1715862323",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1878,7 +1878,7 @@
         },
         {
             "name": "drupal/commerce_price",
-            "version": "2.38.0",
+            "version": "2.39.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/core": "^9.3 || ^10"
@@ -1886,8 +1886,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.38",
-                    "datestamp": "1707150193",
+                    "version": "8.x-2.39",
+                    "datestamp": "1715862323",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1920,7 +1920,7 @@
         },
         {
             "name": "drupal/commerce_store",
-            "version": "2.38.0",
+            "version": "2.39.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_price": "*",
@@ -1929,8 +1929,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.38",
-                    "datestamp": "1707150193",
+                    "version": "8.x-2.39",
+                    "datestamp": "1715862323",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3042,17 +3042,17 @@
         },
         {
             "name": "drupal/layout_builder_restrictions",
-            "version": "2.19.0",
+            "version": "2.20.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/layout_builder_restrictions.git",
-                "reference": "8.x-2.19"
+                "reference": "8.x-2.20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/layout_builder_restrictions-8.x-2.19.zip",
-                "reference": "8.x-2.19",
-                "shasum": "562162568d3bf046cc63912f0985fd90c0767033"
+                "url": "https://ftp.drupal.org/files/projects/layout_builder_restrictions-8.x-2.20.zip",
+                "reference": "8.x-2.20",
+                "shasum": "cd5c87869a0843f91fae0600f74b6c2ed102e398"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10"
@@ -3065,8 +3065,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.19",
-                    "datestamp": "1688739554",
+                    "version": "8.x-2.20",
+                    "datestamp": "1715895237",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9081,12 +9081,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twfahey1/aqto_ai_codegen.git",
-                "reference": "1ad78bbd0eb9c264cb1636a06d1aab611c8d2f02"
+                "reference": "5ec5fcf67b9af9b1b87d01e1e1e6c5f748f21988"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twfahey1/aqto_ai_codegen/zipball/1ad78bbd0eb9c264cb1636a06d1aab611c8d2f02",
-                "reference": "1ad78bbd0eb9c264cb1636a06d1aab611c8d2f02",
+                "url": "https://api.github.com/repos/twfahey1/aqto_ai_codegen/zipball/5ec5fcf67b9af9b1b87d01e1e1e6c5f748f21988",
+                "reference": "5ec5fcf67b9af9b1b87d01e1e1e6c5f748f21988",
                 "shasum": ""
             },
             "require": {
@@ -9114,7 +9114,7 @@
                 "issues": "https://github.com/twfahey1/aqto_ai_codegen/issues",
                 "source": "https://github.com/twfahey1/aqto_ai_codegen/tree/main"
             },
-            "time": "2024-05-06T20:42:10+00:00"
+            "time": "2024-05-16T14:39:32+00:00"
         },
         {
             "name": "twfahey1/aqto_ai_core",
@@ -9122,12 +9122,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twfahey1/aqto_ai_core.git",
-                "reference": "a2bffa3546afb35d953b5bfb7ee2785210222fc6"
+                "reference": "15677dc42e1dc18eb3bc39bdbe619df5757dcdfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twfahey1/aqto_ai_core/zipball/a2bffa3546afb35d953b5bfb7ee2785210222fc6",
-                "reference": "a2bffa3546afb35d953b5bfb7ee2785210222fc6",
+                "url": "https://api.github.com/repos/twfahey1/aqto_ai_core/zipball/15677dc42e1dc18eb3bc39bdbe619df5757dcdfa",
+                "reference": "15677dc42e1dc18eb3bc39bdbe619df5757dcdfa",
                 "shasum": ""
             },
             "default-branch": true,
@@ -9152,7 +9152,7 @@
                 "issues": "https://github.com/twfahey1/aqto_ai_core/issues",
                 "source": "https://github.com/twfahey1/aqto_ai_core/tree/main"
             },
-            "time": "2024-05-06T20:38:56+00:00"
+            "time": "2024-05-17T20:11:09+00:00"
         },
         {
             "name": "twfahey1/aqto_blocks",
@@ -9160,12 +9160,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twfahey1/aqto_blocks.git",
-                "reference": "f9c16b5dfe8099890e4db6c53806165a0bf49b94"
+                "reference": "f6caee5b1a3e97678071cc3f307fdc5fa8cbffae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twfahey1/aqto_blocks/zipball/f9c16b5dfe8099890e4db6c53806165a0bf49b94",
-                "reference": "f9c16b5dfe8099890e4db6c53806165a0bf49b94",
+                "url": "https://api.github.com/repos/twfahey1/aqto_blocks/zipball/f6caee5b1a3e97678071cc3f307fdc5fa8cbffae",
+                "reference": "f6caee5b1a3e97678071cc3f307fdc5fa8cbffae",
                 "shasum": ""
             },
             "default-branch": true,
@@ -9190,7 +9190,7 @@
                 "issues": "https://github.com/twfahey1/aqto_blocks/issues",
                 "source": "https://github.com/twfahey1/aqto_blocks/tree/main"
             },
-            "time": "2024-05-07T01:21:17+00:00"
+            "time": "2024-05-17T18:55:11+00:00"
         },
         {
             "name": "twfahey1/aqto_defaults",
@@ -9198,12 +9198,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twfahey1/aqto_defaults.git",
-                "reference": "c0bd89d4a6ec99d873fe612cc2d05725ba14d27a"
+                "reference": "7748bdee503559a5caf4cbb6ceeffa9efcf8621e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twfahey1/aqto_defaults/zipball/c0bd89d4a6ec99d873fe612cc2d05725ba14d27a",
-                "reference": "c0bd89d4a6ec99d873fe612cc2d05725ba14d27a",
+                "url": "https://api.github.com/repos/twfahey1/aqto_defaults/zipball/7748bdee503559a5caf4cbb6ceeffa9efcf8621e",
+                "reference": "7748bdee503559a5caf4cbb6ceeffa9efcf8621e",
                 "shasum": ""
             },
             "default-branch": true,
@@ -9228,7 +9228,7 @@
                 "issues": "https://github.com/twfahey1/aqto_defaults/issues",
                 "source": "https://github.com/twfahey1/aqto_defaults/tree/main"
             },
-            "time": "2024-05-06T20:40:32+00:00"
+            "time": "2024-05-07T18:28:12+00:00"
         },
         {
             "name": "twfahey1/aqto_layout_builder_styles",
@@ -9345,6 +9345,44 @@
             "time": "2024-05-04T12:23:06+00:00"
         },
         {
+            "name": "twfahey1/aqto_text_formats",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twfahey1/aqto_text_formats.git",
+                "reference": "e13ab06e6b474c8e040129de64105c29ec44ac60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twfahey1/aqto_text_formats/zipball/e13ab06e6b474c8e040129de64105c29ec44ac60",
+                "reference": "e13ab06e6b474c8e040129de64105c29ec44ac60",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tyler Fahey",
+                    "email": "twfahey1@gmail.com"
+                }
+            ],
+            "description": "A Drupal module provides text format settings for use in Aqto projects.",
+            "homepage": "https://github.com/twfahey1/aqto_text_formats",
+            "keywords": [
+                "drupal",
+                "module"
+            ],
+            "support": {
+                "issues": "https://github.com/twfahey1/aqto_text_formats/issues",
+                "source": "https://github.com/twfahey1/aqto_text_formats/tree/main"
+            },
+            "time": "2024-05-07T18:27:11+00:00"
+        },
+        {
             "name": "twfahey1/aqto_theme_base",
             "version": "dev-main",
             "source": {
@@ -9390,12 +9428,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twfahey1/aqto_upstream.git",
-                "reference": "18b66704a62c0e15f7169aafc684a3beaf7589df"
+                "reference": "024cfa9714a0b787f3d7015a7679a24579d61b6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twfahey1/aqto_upstream/zipball/18b66704a62c0e15f7169aafc684a3beaf7589df",
-                "reference": "18b66704a62c0e15f7169aafc684a3beaf7589df",
+                "url": "https://api.github.com/repos/twfahey1/aqto_upstream/zipball/024cfa9714a0b787f3d7015a7679a24579d61b6a",
+                "reference": "024cfa9714a0b787f3d7015a7679a24579d61b6a",
                 "shasum": ""
             },
             "require": {
@@ -9434,6 +9472,7 @@
                 "twfahey1/aqto_layout_builder_styles": "dev-main",
                 "twfahey1/aqto_page": "dev-main",
                 "twfahey1/aqto_static": "dev-main",
+                "twfahey1/aqto_text_formats": "dev-main",
                 "twfahey1/aqto_theme_base": "dev-main",
                 "vlucas/phpdotenv": "^5.1",
                 "webflo/drupal-finder": "^1.2"
@@ -9490,7 +9529,7 @@
                 "issues": "https://github.com/twfahey1/aqto_upstream/issues",
                 "source": "https://github.com/twfahey1/aqto_upstream/tree/main"
             },
-            "time": "2024-05-07T05:19:24+00:00"
+            "time": "2024-05-07T18:29:24+00:00"
         },
         {
             "name": "twig/twig",
@@ -9650,30 +9689,31 @@
         },
         {
             "name": "webflo/drupal-finder",
-            "version": "1.2.2",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-finder.git",
-                "reference": "c8e5dbe65caef285fec8057a4c718a0d4138d1ee"
+                "reference": "1fa65484857c7a2e4dcf0d9e0b47198fe0681b8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-finder/zipball/c8e5dbe65caef285fec8057a4c718a0d4138d1ee",
-                "reference": "c8e5dbe65caef285fec8057a4c718a0d4138d1ee",
+                "url": "https://api.github.com/repos/webflo/drupal-finder/zipball/1fa65484857c7a2e4dcf0d9e0b47198fe0681b8a",
+                "reference": "1fa65484857c7a2e4dcf0d9e0b47198fe0681b8a",
                 "shasum": ""
             },
             "require": {
-                "ext-json": "*"
+                "composer-runtime-api": "^2.2",
+                "php": ">=8.1"
             },
             "require-dev": {
                 "mikey179/vfsstream": "^1.6",
-                "phpunit/phpunit": "^4.8"
+                "phpunit/phpunit": "^10.4"
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "src/DrupalFinder.php"
-                ]
+                "psr-4": {
+                    "DrupalFinder\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -9685,12 +9725,12 @@
                     "email": "florian@webflo.org"
                 }
             ],
-            "description": "Helper class to locate a Drupal installation from a given path.",
+            "description": "Helper class to locate a Drupal installation.",
             "support": {
                 "issues": "https://github.com/webflo/drupal-finder/issues",
-                "source": "https://github.com/webflo/drupal-finder/tree/1.2.2"
+                "source": "https://github.com/webflo/drupal-finder/tree/1.3.0"
             },
-            "time": "2020-10-27T09:42:17+00:00"
+            "time": "2024-05-08T21:22:39+00:00"
         }
     ],
     "packages-dev": [],
