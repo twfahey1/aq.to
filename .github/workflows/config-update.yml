@@ -1,4 +1,4 @@
-name: Enhanced LAMP Setup, Deploy, and Config Update
+name: Update latest configs and Features revert from LIVE
 
 on:
   workflow_dispatch:
@@ -22,7 +22,21 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
-
+      - name: Setup SSH
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          if_key_exists: replace
+          config: |
+            LogLevel=quiet
+            Host *
+            StrictHostKeyChecking=no
+            PasswordAuthentication no
+            PubkeyAuthentication yes
+            Host *.drush.in
+            StrictHostKeyChecking no
+          known_hosts: |
+            127.0.0.1
       - name: Set up PHP 8.2
         uses: shivammathur/setup-php@v2
         with:
