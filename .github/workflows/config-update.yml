@@ -101,14 +101,44 @@ jobs:
       
           # Apply the sed fix to the dump file
           sed -i 's/utf8mb4_0900_ai_ci/utf8mb4_unicode_ci/g' dump.sql
-      
-          ./vendor/bin/drush sql-drop -y
-          ./vendor/bin/drush sql-cli < dump.sql
-          ./vendor/bin/drush cex -y
-      - name: Commit and Push Changes to GitHub
-        run: |
+
+          # Get our git setup for the commits ahead.
           git config --global user.name "aqto-auto"
           git config --global user.email "tyler@tylerfahey.com"
+      
+          # Drop the fresh install db and import the live site dump.
+          ./vendor/bin/drush sql-drop -y
+          ./vendor/bin/drush sql-cli < dump.sql
+
+          # First, capture all the current config from the fresh live site.
+          ./vendor/bin/drush cex -y
           git add .
           git commit -m "Update config from live"
+
+          # Now, we can enforce any Features that we may have updated or erroneously been reverted on live site.
+          ./vendor/bin/drush fr aqto_page -y
+          # Add + commit the resulting changes.
+          git add .
+          git commit -m "Revert aqto_page feature from live site."
+
+          # Revert anything else similarly as needed.
+          
+          # Finally, push everything back up to deploy. We could optionally do a PR here if we wanted to.
           git push origin main
+      - name: Deploy
+        env:
+          SSH_USER: aqto-dev
+          SSH_HOST: ${{ secrets.SERVER_IP_ADDRESS }}
+          SSH_PORT: 22
+          SERVER_APP_LOCATION: ${{ secrets.SERVER_APP_LOCATION }}
+        run: |
+          ssh $SSH_USER@$SSH_HOST -p$SSH_PORT -v <<EOF
+          cd $SERVER_APP_LOCATION
+          git pull
+          composer install --no-progress --no-interaction
+          # Do a sql-dump to a folder on server /srv/users/aqto-dev/apps/aqto-dev/backups that we'll replace on each deploy.
+          # This way we can always revert to the last known good state.
+          ./vendor/bin/drush sql-dump --result-file=/srv/users/aqto-dev/apps/aqto-dev/backups/dump.sql
+          # Now we config import any changes to the live site.
+          ./vendor/bin/drush cim -y
+          EOF
