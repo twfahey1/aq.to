@@ -113,30 +113,43 @@ jobs:
           # First, capture all the current config from the fresh live site.
           ./vendor/bin/drush cex -y
           git add .
-          git commit -m "Update config from live"
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Update config from live"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
 
           # Now, we can enforce any Features that we may have updated or erroneously been reverted on live site.
           ./vendor/bin/drush fr aqto_page -y
           # Add + commit the resulting changes.
           git add .
-          git commit -m "Revert aqto_page feature from live site."
-
-          # Revert anything else similarly as needed.
-
-          # Finally, push everything back up to deploy. We could optionally do a PR here if we wanted to.
-          git push origin main
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Revert aqto_page feature from live site."
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
       - name: Run a composer update and a drush updb -y
         run: |
           cd ${{ env.path_to_site_codebase_on_runner }}
           composer update --no-progress --no-interaction
           git add .
-          git commit -m "Run a composer update"
-          git push origin main
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Run a composer update"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
           ./vendor/bin/drush updb -y
           ./vendor/bin/drush cex -y
           git add .
-          git commit -m "Export config post update"
-          git push origin main
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Export config post update"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
       - name: Deploy
         env:
           SSH_USER: aqto-dev
