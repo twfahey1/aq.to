@@ -86,7 +86,9 @@ jobs:
 
       - name: Start Apache Service
         run: sudo systemctl start apache2
-
+      - name: Configure Git to Use SSH
+        run: |
+          git remote set-url origin git@github.com:${{ github.repository }}.git
       - name: Sync Database and Update Config
         env:
           SSH_USER: aqto-dev
