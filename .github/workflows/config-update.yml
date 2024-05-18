@@ -122,8 +122,20 @@ jobs:
           git commit -m "Revert aqto_page feature from live site."
 
           # Revert anything else similarly as needed.
-          
+
           # Finally, push everything back up to deploy. We could optionally do a PR here if we wanted to.
+          git push origin main
+      - name: Run a composer update and a drush updb -y
+        run: |
+          cd ${{ env.path_to_site_codebase_on_runner }}
+          composer update --no-progress --no-interaction
+          git add .
+          git commit -m "Run a composer update"
+          git push origin main
+          ./vendor/bin/drush updb -y
+          ./vendor/bin/drush cex -y
+          git add .
+          git commit -m "Export config post update"
           git push origin main
       - name: Deploy
         env:
