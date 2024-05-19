@@ -145,6 +145,8 @@ jobs:
       - name: Run a composer update and a drush updb -y
         run: |
           cd ${{ env.path_to_site_codebase_on_runner }}
+          rm -rf vendor
+          rm composer.lock
           composer update --no-progress --no-interaction
           git add .
           if [ -n "$(git status --porcelain)" ]; then
