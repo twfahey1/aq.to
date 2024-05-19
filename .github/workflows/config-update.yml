@@ -147,6 +147,8 @@ jobs:
           cd ${{ env.path_to_site_codebase_on_runner }}
           rm -rf vendor
           rm composer.lock
+          chmod -R 775 web/modules/contrib
+          chown -R $USER:$USER web/modules/contrib
           composer update --no-progress --no-interaction
           git add .
           if [ -n "$(git status --porcelain)" ]; then
