@@ -1,4 +1,4 @@
-name: Update latest configs and Features revert from LIVE
+name: Update config from live, composer update, and features revert
 
 on:
   workflow_dispatch:
