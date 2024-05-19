@@ -145,8 +145,9 @@ jobs:
       - name: Run a composer update and a drush updb -y
         run: |
           cd ${{ env.path_to_site_codebase_on_runner }}
-          chmod -R 777 ${{ env.path_to_site_codebase_on_runner }}
           rm -rf vendor
+          rm -rf web/core
+          rm -rf web/modules/contrib
           rm composer.lock
           composer update --no-progress --no-interaction --prefer-source
           git add .
