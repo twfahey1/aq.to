@@ -9,6 +9,6 @@ label: 'p-32 md'
 classes: 'md:p-32'
 type: section
 group: padding_md
-weight: 0
 block_restrictions: {  }
 layout_restrictions: {  }
+weight: 0

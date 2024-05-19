@@ -9,6 +9,6 @@ label: 'p-64 lg'
 classes: 'lg:p-64'
 type: section
 group: padding_lg
-weight: 0
 block_restrictions: {  }
 layout_restrictions: {  }
+weight: 0

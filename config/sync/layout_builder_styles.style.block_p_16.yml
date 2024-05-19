@@ -9,6 +9,6 @@ label: p-16
 classes: p-16
 type: component
 group: padding
-weight: 0
 block_restrictions: {  }
 layout_restrictions: {  }
+weight: 0

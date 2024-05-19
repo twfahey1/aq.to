@@ -9,6 +9,6 @@ label: 'p-8 md'
 classes: 'md:p-8'
 type: component
 group: padding_md
-weight: 0
 block_restrictions: {  }
 layout_restrictions: {  }
+weight: 0
