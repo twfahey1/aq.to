@@ -9198,12 +9198,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twfahey1/aqto_defaults.git",
-                "reference": "7748bdee503559a5caf4cbb6ceeffa9efcf8621e"
+                "reference": "9a0ab7224272fd57ecf4fa6b30c015ddb8a0f7fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twfahey1/aqto_defaults/zipball/7748bdee503559a5caf4cbb6ceeffa9efcf8621e",
-                "reference": "7748bdee503559a5caf4cbb6ceeffa9efcf8621e",
+                "url": "https://api.github.com/repos/twfahey1/aqto_defaults/zipball/9a0ab7224272fd57ecf4fa6b30c015ddb8a0f7fa",
+                "reference": "9a0ab7224272fd57ecf4fa6b30c015ddb8a0f7fa",
                 "shasum": ""
             },
             "default-branch": true,
@@ -9228,7 +9228,45 @@
                 "issues": "https://github.com/twfahey1/aqto_defaults/issues",
                 "source": "https://github.com/twfahey1/aqto_defaults/tree/main"
             },
-            "time": "2024-05-07T18:28:12+00:00"
+            "time": "2024-05-19T11:25:59+00:00"
+        },
+        {
+            "name": "twfahey1/aqto_layout_builder_custom_sections",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twfahey1/aqto_layout_builder_custom_sections.git",
+                "reference": "2fe4f48a26d3c19709ef3aeaa6dd5eaa8bc1e85c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twfahey1/aqto_layout_builder_custom_sections/zipball/2fe4f48a26d3c19709ef3aeaa6dd5eaa8bc1e85c",
+                "reference": "2fe4f48a26d3c19709ef3aeaa6dd5eaa8bc1e85c",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tyler Fahey",
+                    "email": "twfahey1@gmail.com"
+                }
+            ],
+            "description": "A Drupal module provides Layout Builder sections for use in Aqto projects.",
+            "homepage": "https://github.com/twfahey1/aqto_layout_builder_custom_sections",
+            "keywords": [
+                "drupal",
+                "module"
+            ],
+            "support": {
+                "issues": "https://github.com/twfahey1/aqto_layout_builder_custom_sections/issues",
+                "source": "https://github.com/twfahey1/aqto_layout_builder_custom_sections/tree/main"
+            },
+            "time": "2024-05-19T09:19:16+00:00"
         },
         {
             "name": "twfahey1/aqto_layout_builder_styles",
@@ -9388,12 +9426,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twfahey1/aqto_theme_base.git",
-                "reference": "8869da54066f5f53c7681e298f61554284e6eacb"
+                "reference": "50f92266554e488b4ce9102be5bfd9a5f07bec53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twfahey1/aqto_theme_base/zipball/8869da54066f5f53c7681e298f61554284e6eacb",
-                "reference": "8869da54066f5f53c7681e298f61554284e6eacb",
+                "url": "https://api.github.com/repos/twfahey1/aqto_theme_base/zipball/50f92266554e488b4ce9102be5bfd9a5f07bec53",
+                "reference": "50f92266554e488b4ce9102be5bfd9a5f07bec53",
                 "shasum": ""
             },
             "default-branch": true,
@@ -9420,7 +9458,7 @@
                 "issues": "https://github.com/twfahey1/aqto_theme_base/issues",
                 "source": "https://github.com/twfahey1/aqto_theme_base/tree/main"
             },
-            "time": "2024-05-07T05:27:10+00:00"
+            "time": "2024-05-19T12:24:40+00:00"
         },
         {
             "name": "twfahey1/aqto_upstream",
@@ -9428,12 +9466,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twfahey1/aqto_upstream.git",
-                "reference": "024cfa9714a0b787f3d7015a7679a24579d61b6a"
+                "reference": "3cb90ecb29524993d291d3bd0a5ee79da9659279"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twfahey1/aqto_upstream/zipball/024cfa9714a0b787f3d7015a7679a24579d61b6a",
-                "reference": "024cfa9714a0b787f3d7015a7679a24579d61b6a",
+                "url": "https://api.github.com/repos/twfahey1/aqto_upstream/zipball/3cb90ecb29524993d291d3bd0a5ee79da9659279",
+                "reference": "3cb90ecb29524993d291d3bd0a5ee79da9659279",
                 "shasum": ""
             },
             "require": {
@@ -9469,6 +9507,7 @@
                 "twfahey1/aqto_ai_core": "dev-main",
                 "twfahey1/aqto_blocks": "dev-main",
                 "twfahey1/aqto_defaults": "dev-main",
+                "twfahey1/aqto_layout_builder_custom_sections": "dev-main",
                 "twfahey1/aqto_layout_builder_styles": "dev-main",
                 "twfahey1/aqto_page": "dev-main",
                 "twfahey1/aqto_static": "dev-main",
@@ -9529,7 +9568,7 @@
                 "issues": "https://github.com/twfahey1/aqto_upstream/issues",
                 "source": "https://github.com/twfahey1/aqto_upstream/tree/main"
             },
-            "time": "2024-05-07T18:29:24+00:00"
+            "time": "2024-05-19T10:33:27+00:00"
         },
         {
             "name": "twig/twig",
@@ -9746,5 +9785,5 @@
     "platform-overrides": {
         "php": "8.2.12"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
