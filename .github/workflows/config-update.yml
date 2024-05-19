@@ -123,6 +123,7 @@ jobs:
           fi
 
           # Now lets update via composer update --no-progress --no-interaction --prefer-source
+          sudo chown -R $(whoami):$(whoami) ${{ env.path_to_site_codebase_on_runner }}
           composer update --no-progress --no-interaction --prefer-source
           git add .
           if [ -n "$(git status --porcelain)" ]; then
