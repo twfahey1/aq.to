@@ -87,7 +87,7 @@ jobs:
       - name: Start Apache Service
         run: sudo systemctl start apache2
 
-      - name: Sync Database and Update Config
+      - name: Sync Database, Composer Update, Update Config
         env:
           SSH_USER: aqto-dev
           SSH_HOST: ${{ secrets.SERVER_IP_ADDRESS }}
@@ -122,6 +122,26 @@ jobs:
             echo "No changes to commit"
           fi
 
+          # Now lets update via composer update --no-progress --no-interaction --prefer-source
+          composer update --no-progress --no-interaction --prefer-source
+          git add .
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Run a composer update"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
+          ./vendor/bin/drush updb -y
+          ./vendor/bin/drush cex -y
+          git add .
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Export config post update"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
+
+
           # Now, we can enforce any Features that we may have updated or erroneously been reverted on live site.
           ./vendor/bin/drush fr aqto_page -y
           # Add + commit the resulting changes.
@@ -138,30 +158,6 @@ jobs:
           git add .
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Revert aqto_layout_builder_styles feature from live site."
-            git push origin main
-          else
-            echo "No changes to commit"
-          fi
-      - name: Run a composer update and a drush updb -y
-        run: |
-          cd ${{ env.path_to_site_codebase_on_runner }}
-          rm -rf vendor
-          rm -rf web/core
-          rm -rf web/modules/contrib
-          rm composer.lock
-          composer update --no-progress --no-interaction --prefer-source
-          git add .
-          if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Run a composer update"
-            git push origin main
-          else
-            echo "No changes to commit"
-          fi
-          ./vendor/bin/drush updb -y
-          ./vendor/bin/drush cex -y
-          git add .
-          if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Export config post update"
             git push origin main
           else
             echo "No changes to commit"
