@@ -1,0 +1,14 @@
+uuid: 8eb71d66-469e-4cea-9ab2-ae34e63bf040
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: itlOpGTu5VktxALyUo-As14VFp8BXawIEjLezl3_quc
+id: section_p_32_md
+label: 'p-32 md'
+classes: 'md:p-32'
+type: section
+group: padding_md
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

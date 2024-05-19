@@ -1,0 +1,14 @@
+uuid: d159606a-ac33-4dd2-8f86-c71f164b131b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: IL54Qh9FAfnmGIn2X2BNEYPIuw-AapUunplAx4evwRM
+id: block_p_32_lg
+label: 'p-32 lg'
+classes: 'lg:p-32'
+type: component
+group: padding_lg
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

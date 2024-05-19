@@ -1,0 +1,14 @@
+uuid: 0c14d4ed-9e8f-4896-b075-8549a723ae00
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: iq-ccc-VuinAktbO01-96ARY9pZoYpG2Q8mzLA9XHDY
+id: section_p_2_lg
+label: 'p-2 lg'
+classes: 'lg:p-2'
+type: section
+group: padding_lg
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

@@ -1,0 +1,14 @@
+uuid: 16c0d119-e41f-4dc1-82e2-11c23b569ec6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: gdikDFNCC7JLK7xCmMZfsR-ohGcmHhaQ9Nff8tiYwbY
+id: block_p_2_lg
+label: 'p-2 lg'
+classes: 'lg:p-2'
+type: component
+group: padding_lg
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

@@ -1,0 +1,14 @@
+uuid: 1386fa2b-082f-42bc-ae78-c8d606b99a1e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: U9rvT3ReJ9y4ubrVcq7ajbX-SwYjw47VN-MDRwTweR0
+id: block_p_16_md
+label: 'p-16 md'
+classes: 'md:p-16'
+type: component
+group: padding_md
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

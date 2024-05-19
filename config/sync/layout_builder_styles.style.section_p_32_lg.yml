@@ -1,0 +1,14 @@
+uuid: 089091dc-1692-449e-ac62-0390419ac945
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: V368INv6YSodjVmHVKMPqVQggSh_En9WKXzvXQKSPdU
+id: section_p_32_lg
+label: 'p-32 lg'
+classes: 'lg:p-32'
+type: section
+group: padding_lg
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

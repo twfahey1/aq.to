@@ -1,0 +1,14 @@
+uuid: b65cc7bf-da42-4059-a6d0-1e4c507fea45
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Htap1bFWtP90pO-vdWCQcie_wGZMgR6uaG1Dnit2V-M
+id: block_p_64_md
+label: 'p-64 md'
+classes: 'md:p-64'
+type: component
+group: padding_md
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

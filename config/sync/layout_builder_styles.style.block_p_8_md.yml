@@ -1,0 +1,14 @@
+uuid: 6af2253f-81ee-4268-8fe4-824f48acdad7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8kdqilPFPdsch7mufz19Jl11AmdmQ--TlIw8a6cHoww
+id: block_p_8_md
+label: 'p-8 md'
+classes: 'md:p-8'
+type: component
+group: padding_md
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

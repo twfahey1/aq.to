@@ -1,0 +1,14 @@
+uuid: a775db26-caf6-4089-8b53-7519edb5a497
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: mInFEcQ8LwyaZmQrqgYp10eKNIMSv7C_CMxg6M7A5qE
+id: section_p_4_md
+label: 'p-4 md'
+classes: 'md:p-4'
+type: section
+group: padding_md
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }
