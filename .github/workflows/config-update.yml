@@ -145,6 +145,7 @@ jobs:
 
           # Now, we can enforce any Features that we may have updated or erroneously been reverted on live site.
           ./vendor/bin/drush fr aqto_page -y
+          ./vendor/bin/drush cex -y
           # Add + commit the resulting changes.
           git add .
           if [ -n "$(git status --porcelain)" ]; then
@@ -155,6 +156,7 @@ jobs:
           fi
           # Lets do the same for aqto_layout_builder_styles
           ./vendor/bin/drush fr aqto_layout_builder_styles -y
+          ./vendor/bin/drush cex -y
           # Add + commit the resulting changes.
           git add .
           if [ -n "$(git status --porcelain)" ]; then
