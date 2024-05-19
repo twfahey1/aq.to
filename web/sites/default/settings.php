@@ -884,16 +884,3 @@ $settings['config_sync_directory'] = '../config/sync';
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
-$databases['default']['default'] = array (
-  'database' => 'drupal',
-  'username' => 'root',
-  'password' => 'root',
-  'prefix' => '',
-  'host' => '127.0.0.1',
-  'port' => '3306',
-  'isolation_level' => 'READ COMMITTED',
-  'driver' => 'mysql',
-  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
-  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
-);
-$settings['hash_salt'] = 'sw-nP1_FqlZ5E1oyug9B0MJVvOXJc3kwA5E5ytykKkyjsvb6h2cCyBdQBpDGUfB5_WC06hXIcw';
