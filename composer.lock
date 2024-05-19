@@ -9426,12 +9426,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twfahey1/aqto_theme_base.git",
-                "reference": "50f92266554e488b4ce9102be5bfd9a5f07bec53"
+                "reference": "3479a023b40c6a43a1eb0d9a4bfb027288fa9245"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twfahey1/aqto_theme_base/zipball/50f92266554e488b4ce9102be5bfd9a5f07bec53",
-                "reference": "50f92266554e488b4ce9102be5bfd9a5f07bec53",
+                "url": "https://api.github.com/repos/twfahey1/aqto_theme_base/zipball/3479a023b40c6a43a1eb0d9a4bfb027288fa9245",
+                "reference": "3479a023b40c6a43a1eb0d9a4bfb027288fa9245",
                 "shasum": ""
             },
             "default-branch": true,
@@ -9458,7 +9458,7 @@
                 "issues": "https://github.com/twfahey1/aqto_theme_base/issues",
                 "source": "https://github.com/twfahey1/aqto_theme_base/tree/main"
             },
-            "time": "2024-05-19T12:24:40+00:00"
+            "time": "2024-05-19T22:17:24+00:00"
         },
         {
             "name": "twfahey1/aqto_upstream",
