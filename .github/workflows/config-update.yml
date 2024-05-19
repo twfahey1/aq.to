@@ -147,7 +147,7 @@ jobs:
           cd ${{ env.path_to_site_codebase_on_runner }}
           rm -rf vendor
           rm composer.lock
-          composer update --no-progress --no-interaction
+          composer update --no-progress --no-interaction --prefer-source
           git add .
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Run a composer update"
@@ -174,7 +174,7 @@ jobs:
           ssh $SSH_USER@$SSH_HOST -p$SSH_PORT -v <<EOF
           cd $SERVER_APP_LOCATION
           git pull
-          composer install --no-progress --no-interaction
+          composer install --no-progress --no-interaction 
           # Do a sql-dump to a folder on server /srv/users/aqto-dev/apps/aqto-dev/backups that we'll replace on each deploy.
           # This way we can always revert to the last known good state.
           ./vendor/bin/drush sql-dump --result-file=/srv/users/aqto-dev/apps/aqto-dev/backups/dump.sql
