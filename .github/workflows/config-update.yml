@@ -68,6 +68,7 @@ jobs:
             'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
             'driver' => 'mysql',
           );
+          \$settings['hash_salt'] = 'sk-kf93492jdkfjlsdf';
           EOF
           chmod 755 ${{ env.path_to_site_codebase_on_runner }}/web/sites/default/settings.local.php
 
