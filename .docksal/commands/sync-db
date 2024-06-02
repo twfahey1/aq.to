@@ -8,29 +8,37 @@
 import_database ()
 {
   local dest="${PROJECT_ROOT}/database_dumps"
-  if [[ ! -f $dest ]]; then
+  if [[ ! -d $dest ]]; then
     create_database_folder
   fi
-  echo "PROJECT_NAME is: ${PROJECT_NAME}";
-  cd ${PROJECT_ROOT}
-  echo "Deleting old database dumps...";
-  rm -f database_dumps/db.sql > /dev/null
-  rm -f database_dumps/db.sql.gz > /dev/null
-  echo "Creating copy of ${PROJECT_NAME}.${PANTHEON_SITE_ENV}...";
-  terminus backup:create ${PROJECT_NAME}.${PANTHEON_SITE_ENV} --element=database
-  echo "Downloading copy of env database...";
-  terminus backup:get ${PROJECT_NAME}.${PANTHEON_SITE_ENV} --element=database | xargs curl -o database_dumps/db.sql.gz
-  echo "Extracting and importing copy of ${PANTHEON_SITE_ENV} database...";
-  fin exec "gunzip -fk database_dumps/db.sql.gz"
-  fin db import "database_dumps/db.sql"
+  echo "PROJECT_NAME is: ${PROJECT_NAME}"
+  cd "${PROJECT_ROOT}"
+  echo "Deleting old database dumps..."
+  rm -f database_dumps/aq.to.sql > /dev/null
+  rm -f database_dumps/aq.to.sql.gz > /dev/null
+  echo "Creating copy of aqto dev server db..."
+  # For this lets ssh onto our ${AQTO_SERVER_IP} server, ${AQTO_APP_LOCATION}, run ./vendor/bin/drush sql-dump --result-file=${SERVER_DB_BACKUPS_LOCATION}/aq.to.sql, we'll rysnc it down then delete it from server after we fin import.
+  ssh aqto-dev@${AQTO_SERVER_IP} -p22 <<EOF
+cd ${AQTO_APP_LOCATION}
+./vendor/bin/drush sql-dump --result-file=${SERVER_DB_BACKUPS_LOCATION}/aq.to.sql
+EOF
+  rsync -avz aqto-dev@${AQTO_SERVER_IP}:${SERVER_DB_BACKUPS_LOCATION}/aq.to.sql "${PROJECT_ROOT}/database_dumps/aq.to.sql"
+  ssh aqto-dev@${AQTO_SERVER_IP} -p22 <<EOF
+rm -f ${SERVER_DB_BACKUPS_LOCATION}/aq.to.sql
+EOF
+
+  echo "Fixing collation in the SQL dump..."
+  sed -i '' 's/utf8mb4_0900_ai_ci/utf8mb4_general_ci/g' "${PROJECT_ROOT}/database_dumps/aq.to.sql"
+
+  echo "Extracting and importing copy of aqto dev server db..."
+  fin db import "database_dumps/aq.to.sql"
 }
 
 create_database_folder()
 {
-  cd ${PROJECT_ROOT}
+  cd "${PROJECT_ROOT}"
   mkdir database_dumps
 }
-
 
 #-------------------------- Execution --------------------------------
 
