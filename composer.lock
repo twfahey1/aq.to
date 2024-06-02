@@ -9467,12 +9467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twfahey1/aqto_theme_base.git",
-                "reference": "9f466a98fcd1a9069850c0415e31d46401eb837d"
+                "reference": "ce7d626ed63ff845f79427942a9c0134a1d7bd13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twfahey1/aqto_theme_base/zipball/9f466a98fcd1a9069850c0415e31d46401eb837d",
-                "reference": "9f466a98fcd1a9069850c0415e31d46401eb837d",
+                "url": "https://api.github.com/repos/twfahey1/aqto_theme_base/zipball/ce7d626ed63ff845f79427942a9c0134a1d7bd13",
+                "reference": "ce7d626ed63ff845f79427942a9c0134a1d7bd13",
                 "shasum": ""
             },
             "default-branch": true,
@@ -9499,7 +9499,7 @@
                 "issues": "https://github.com/twfahey1/aqto_theme_base/issues",
                 "source": "https://github.com/twfahey1/aqto_theme_base/tree/main"
             },
-            "time": "2024-05-22T11:22:40+00:00"
+            "time": "2024-06-02T21:34:22+00:00"
         },
         {
             "name": "twfahey1/aqto_upstream",
@@ -9827,5 +9827,5 @@
     "platform-overrides": {
         "php": "8.2.12"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
