@@ -1,0 +1,10 @@
+name: Aqto Custom SubTheme Base
+type: theme
+description: A Tailwind based theme for Aqto sites with tons of flexible options.
+package: Aqto
+core_version_requirement: ^10
+base theme: aqto_theme_base
+libraries:
+  - aqto_subtheme/global-styling
+dependencies:
+  - aqto_theme_base

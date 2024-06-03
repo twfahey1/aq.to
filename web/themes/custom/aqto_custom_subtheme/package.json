@@ -1,0 +1,24 @@
+{
+    "name": "aqto_subtheme",
+    "private": true,
+    "scripts": {
+      "build-tailwind": "postcss src/tailwind/styles.css -o css/custom-tailwind-styles.css",
+      "build-custom-scss": "sass src/scss/custom.scss css/custom-styles.css",
+      "build": "npm run build-tailwind && npm run build-custom-scss",
+      "watch": "npm run build && npm run livereload && concurrently \"npm run build-tailwind -- --watch\" \"npm run build-custom-scss -- --watch\""
+    },
+    "devDependencies": {
+      "autoprefixer": "^10.0.0",
+      "livereload": "^0.9.3",
+      "postcss": "^8.0.0",
+      "postcss-cli": "^8.0.0",
+      "postcss-import": "^14.0.0",
+      "tailwindcss": "^3.0.0"
+    },
+    "dependencies": {
+      "@tailwindcss/forms": "^0.5.3",
+      "@tailwindcss/typography": "^0.5.9",
+      "sass": "^1.62.1"
+    }
+  }
+  
