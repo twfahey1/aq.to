@@ -23,6 +23,9 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  embed: 0
+  entity_embed: 0
+  entity_reference_revisions: 0
   features: 0
   features_ui: 0
   field: 0
@@ -42,6 +45,7 @@ module:
   node: 0
   options: 0
   page_cache: 0
+  paragraphs_entity_embed: 0
   path: 0
   path_alias: 0
   search: 0
@@ -55,6 +59,7 @@ module:
   views_ui: 0
   webp: 0
   views: 10
+  paragraphs: 11
   page_title_visibility: 98
   breadcrumbs_visibility: 99
   standard: 1000

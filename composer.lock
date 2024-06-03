@@ -2539,6 +2539,73 @@
             }
         },
         {
+            "name": "drupal/embed",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/embed.git",
+                "reference": "8.x-1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "b7ca4264be51038f947d26b6725fc0446b224f60"
+            },
+            "require": {
+                "drupal/core": "^9.3 | ^10"
+            },
+            "require-dev": {
+                "drupal/ckeditor": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.7",
+                    "datestamp": "1697642867",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "cs_shadow",
+                    "homepage": "https://www.drupal.org/user/2828287"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Devin Carlson",
+                    "homepage": "https://www.drupal.org/user/290182"
+                },
+                {
+                    "name": "Drupal Media Team",
+                    "homepage": "https://www.drupal.org/user/3260690"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                }
+            ],
+            "description": "Provides a framework for different types of embeds in text editors.",
+            "homepage": "https://www.drupal.org/project/embed",
+            "support": {
+                "source": "https://git.drupalcode.org/project/embed"
+            }
+        },
+        {
             "name": "drupal/entity",
             "version": "1.4.0",
             "source": {
@@ -2605,6 +2672,83 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/entity",
                 "issues": "https://www.drupal.org/project/issues/entity"
+            }
+        },
+        {
+            "name": "drupal/entity_embed",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_embed.git",
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_embed-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "9c65a87f4285dc47303783db2e3af5825164d1dc"
+            },
+            "require": {
+                "drupal/core": "^9.5 || ^10",
+                "drupal/embed": "^1.7"
+            },
+            "require-dev": {
+                "drupal/ckeditor": "^1",
+                "drupal/entity_browser": "^2.2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1712587671",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "cs_shadow",
+                    "homepage": "https://www.drupal.org/user/2828287"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Devin Carlson",
+                    "homepage": "https://www.drupal.org/user/290182"
+                },
+                {
+                    "name": "Drupal Media Team",
+                    "homepage": "https://www.drupal.org/user/3260690"
+                },
+                {
+                    "name": "oknate",
+                    "homepage": "https://www.drupal.org/user/471638"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                },
+                {
+                    "name": "Wim Leers",
+                    "homepage": "https://www.drupal.org/user/99777"
+                }
+            ],
+            "description": "Allows any entity to be embedded within a text area using a WYSIWYG editor.",
+            "homepage": "https://www.drupal.org/project/entity_embed",
+            "support": {
+                "source": "https://git.drupalcode.org/project/entity_embed"
             }
         },
         {
@@ -3552,6 +3696,82 @@
             "homepage": "https://www.drupal.org/project/paragraphs",
             "support": {
                 "source": "https://git.drupalcode.org/project/paragraphs"
+            }
+        },
+        {
+            "name": "drupal/paragraphs_entity_embed",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/paragraphs_entity_embed.git",
+                "reference": "3.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraphs_entity_embed-3.0.1.zip",
+                "reference": "3.0.1",
+                "shasum": "613cb47ef7c9821fd71d27d84c5946cc0ab8f815"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10",
+                "drupal/embed": "*",
+                "drupal/entity_embed": "*",
+                "drupal/paragraphs": "*"
+            },
+            "require-dev": {
+                "drupal/embed": "^1.4",
+                "drupal/entity_embed": "^1.1",
+                "drupal/entity_reference_revisions": "^1.8",
+                "drupal/paragraphs": "^1.12"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.1",
+                    "datestamp": "1701799567",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolay Ignatov",
+                    "homepage": "https://www.drupal.org/user/1443204",
+                    "email": "nikolai.ignatov@gmail.com",
+                    "role": "Creator and Maintainer"
+                },
+                {
+                    "name": "Dobrin Dobrev",
+                    "homepage": "https://www.drupal.org/user/2803987",
+                    "email": "ddobrev81@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Milka Petkova",
+                    "homepage": "https://www.drupal.org/user/2301376",
+                    "email": "milka.petkova.88@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "skek",
+                    "homepage": "https://www.drupal.org/user/417078"
+                },
+                {
+                    "name": "smustgrave",
+                    "homepage": "https://www.drupal.org/user/3252890"
+                }
+            ],
+            "description": "Allows for paragraph entities to be embedded as items into the CKEditor.",
+            "homepage": "https://www.drupal.org/project/paragraphs_entity_embed",
+            "support": {
+                "source": "https://git.drupalcode.org/project/paragraphs_entity_embed",
+                "issues": "https://www.drupal.org/project/issues/paragraphs_entity_embed"
             }
         },
         {
@@ -9467,12 +9687,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twfahey1/aqto_theme_base.git",
-                "reference": "ce7d626ed63ff845f79427942a9c0134a1d7bd13"
+                "reference": "1ea65c22f14aed6ac3555364d1d205ad7ed615e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twfahey1/aqto_theme_base/zipball/ce7d626ed63ff845f79427942a9c0134a1d7bd13",
-                "reference": "ce7d626ed63ff845f79427942a9c0134a1d7bd13",
+                "url": "https://api.github.com/repos/twfahey1/aqto_theme_base/zipball/1ea65c22f14aed6ac3555364d1d205ad7ed615e1",
+                "reference": "1ea65c22f14aed6ac3555364d1d205ad7ed615e1",
                 "shasum": ""
             },
             "default-branch": true,
@@ -9499,7 +9719,7 @@
                 "issues": "https://github.com/twfahey1/aqto_theme_base/issues",
                 "source": "https://github.com/twfahey1/aqto_theme_base/tree/main"
             },
-            "time": "2024-06-02T21:34:22+00:00"
+            "time": "2024-06-03T14:36:50+00:00"
         },
         {
             "name": "twfahey1/aqto_upstream",
@@ -9507,12 +9727,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twfahey1/aqto_upstream.git",
-                "reference": "7eb6cd61a6693d82a7b49ec9f255ce577f54cfa6"
+                "reference": "d977a6f21d377b984e7740d9957fb85a25b68900"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twfahey1/aqto_upstream/zipball/7eb6cd61a6693d82a7b49ec9f255ce577f54cfa6",
-                "reference": "7eb6cd61a6693d82a7b49ec9f255ce577f54cfa6",
+                "url": "https://api.github.com/repos/twfahey1/aqto_upstream/zipball/d977a6f21d377b984e7740d9957fb85a25b68900",
+                "reference": "d977a6f21d377b984e7740d9957fb85a25b68900",
                 "shasum": ""
             },
             "require": {
@@ -9536,6 +9756,7 @@
                 "drupal/node_view_permissions": "^1.5",
                 "drupal/page_title_visibility": "^1.6",
                 "drupal/paragraphs": "^1.15",
+                "drupal/paragraphs_entity_embed": "^3.0",
                 "drupal/pathauto": "^1.11",
                 "drupal/symfony_mailer": "^1.2",
                 "drupal/turnstile": "^1.1",
@@ -9610,7 +9831,7 @@
                 "issues": "https://github.com/twfahey1/aqto_upstream/issues",
                 "source": "https://github.com/twfahey1/aqto_upstream/tree/main"
             },
-            "time": "2024-05-21T20:48:59+00:00"
+            "time": "2024-06-03T15:55:45+00:00"
         },
         {
             "name": "twig/twig",
