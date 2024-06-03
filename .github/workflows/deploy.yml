@@ -32,6 +32,12 @@ jobs:
         run: |
           ssh $SSH_USER@$SSH_HOST -p$SSH_PORT -v <<EOF
           cd $SERVER_APP_LOCATION
+          # First lets sql dump to a "${{ secrets.SERVER_APP_LOCATION }}/../backups/deploy-pre-backup.sql" file
+          ./vendor/bin/drush sql-dump --result-file="${{ secrets.SERVER_APP_LOCATION }}/../backups/deploy-pre-backup.sql"
           git pull
           composer install --no-progress --no-interaction
+          # Now lets drush cache rebuild + drush config import + drush updb -y
+          ./vendor/bin/drush cr -y
+          ./vendor/bin/drush cim -y
+          ./vendor/bin/drush updb -y
           EOF
