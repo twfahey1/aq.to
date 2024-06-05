@@ -6564,16 +6564,16 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v7.1.0",
+            "version": "v7.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "843f2f7ac5e4c5bf0ec77daef23ca6d4d8922adc"
+                "reference": "1c7cee86c6f812896af54434f8ce29c8d94f9ff4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/843f2f7ac5e4c5bf0ec77daef23ca6d4d8922adc",
-                "reference": "843f2f7ac5e4c5bf0ec77daef23ca6d4d8922adc",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/1c7cee86c6f812896af54434f8ce29c8d94f9ff4",
+                "reference": "1c7cee86c6f812896af54434f8ce29c8d94f9ff4",
                 "shasum": ""
             },
             "require": {
@@ -6609,7 +6609,7 @@
             "description": "Converts CSS selectors to XPath expressions",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v7.1.0"
+                "source": "https://github.com/symfony/css-selector/tree/v7.1.1"
             },
             "funding": [
                 {
@@ -6625,7 +6625,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-18T09:32:20+00:00"
+            "time": "2024-05-31T14:57:53+00:00"
         },
         {
             "name": "symfony/dependency-injection",
@@ -9345,12 +9345,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twfahey1/aqto_ai_core.git",
-                "reference": "96cde9b20653da7fa893be9d5ae7186573660562"
+                "reference": "b751e24eb68c29f65698e6a6efd6a1cc62ddfb44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twfahey1/aqto_ai_core/zipball/96cde9b20653da7fa893be9d5ae7186573660562",
-                "reference": "96cde9b20653da7fa893be9d5ae7186573660562",
+                "url": "https://api.github.com/repos/twfahey1/aqto_ai_core/zipball/b751e24eb68c29f65698e6a6efd6a1cc62ddfb44",
+                "reference": "b751e24eb68c29f65698e6a6efd6a1cc62ddfb44",
                 "shasum": ""
             },
             "default-branch": true,
@@ -9375,7 +9375,7 @@
                 "issues": "https://github.com/twfahey1/aqto_ai_core/issues",
                 "source": "https://github.com/twfahey1/aqto_ai_core/tree/main"
             },
-            "time": "2024-05-22T11:42:42+00:00"
+            "time": "2024-06-05T18:54:46+00:00"
         },
         {
             "name": "twfahey1/aqto_ajax_loader",
@@ -9383,12 +9383,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twfahey1/aqto_ajax_loader.git",
-                "reference": "70474fb38f8ca4ab1a186bfd8f921f505a291ed3"
+                "reference": "14c6f42d499bc740ceb735973778da6e904e72d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twfahey1/aqto_ajax_loader/zipball/70474fb38f8ca4ab1a186bfd8f921f505a291ed3",
-                "reference": "70474fb38f8ca4ab1a186bfd8f921f505a291ed3",
+                "url": "https://api.github.com/repos/twfahey1/aqto_ajax_loader/zipball/14c6f42d499bc740ceb735973778da6e904e72d5",
+                "reference": "14c6f42d499bc740ceb735973778da6e904e72d5",
                 "shasum": ""
             },
             "default-branch": true,
@@ -9413,7 +9413,7 @@
                 "issues": "https://github.com/twfahey1/aqto_ajax_loader/issues",
                 "source": "https://github.com/twfahey1/aqto_ajax_loader/tree/main"
             },
-            "time": "2024-05-22T11:08:04+00:00"
+            "time": "2024-06-05T17:11:57+00:00"
         },
         {
             "name": "twfahey1/aqto_blocks",
@@ -9687,12 +9687,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twfahey1/aqto_theme_base.git",
-                "reference": "edd9eae51e92bb02a5e5c7d37906f3ba58bd2ff7"
+                "reference": "da0c8a7b93069e1fb00bb35237e8e909d47369a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twfahey1/aqto_theme_base/zipball/edd9eae51e92bb02a5e5c7d37906f3ba58bd2ff7",
-                "reference": "edd9eae51e92bb02a5e5c7d37906f3ba58bd2ff7",
+                "url": "https://api.github.com/repos/twfahey1/aqto_theme_base/zipball/da0c8a7b93069e1fb00bb35237e8e909d47369a9",
+                "reference": "da0c8a7b93069e1fb00bb35237e8e909d47369a9",
                 "shasum": ""
             },
             "default-branch": true,
@@ -9719,7 +9719,7 @@
                 "issues": "https://github.com/twfahey1/aqto_theme_base/issues",
                 "source": "https://github.com/twfahey1/aqto_theme_base/tree/main"
             },
-            "time": "2024-06-03T16:23:24+00:00"
+            "time": "2024-06-05T17:31:17+00:00"
         },
         {
             "name": "twfahey1/aqto_upstream",
@@ -10048,5 +10048,5 @@
     "platform-overrides": {
         "php": "8.2.12"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
