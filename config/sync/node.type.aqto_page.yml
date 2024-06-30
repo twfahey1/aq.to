@@ -14,7 +14,7 @@ _core:
 name: 'Aqto Page'
 type: aqto_page
 description: 'The Aqto page provides a flexible foundation for site content.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 0
 display_submitted: false
