@@ -46,7 +46,10 @@ jobs:
           ./vendor/bin/drush cr -y
           ./vendor/bin/drush cim -y
           ./vendor/bin/drush updb -y
-          # Now lets chmod things like web/sites/default, web/sites/default/services.yml, web/sites/default/settings.default.php, to be read-only again
-          chmod -R 555 web/sites/default
+          # Now lets chmod things like web/sites/default, web/sites/default/services.yml, web/sites/default/settings.default.php, to be read-only again, just the specific files that matter.
+          chmod 644 web/sites/default/services.yml
+          chmod 644 web/sites/default/settings.default.php
+          chmod 755 web/sites/default
+          
 
           EOF
