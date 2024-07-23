@@ -1,0 +1,20 @@
+uuid: 3c74f9fb-520a-4c2f-b808-8c13e84757ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - aqto_ai_core
+  theme:
+    - aqto_theme_base
+id: aqto_theme_base_aqtoaiagent
+theme: aqto_theme_base
+region: content
+weight: 0
+provider: null
+plugin: aqto_ai_core_agent
+settings:
+  id: aqto_ai_core_agent
+  label: 'Aqto AI Agent'
+  label_display: '0'
+  provider: aqto_ai_core
+visibility: {  }

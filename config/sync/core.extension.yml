@@ -4,6 +4,8 @@ module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
   announcements_feed: 0
+  aqto_ai_codegen: 0
+  aqto_ai_core: 0
   aqto_blocks: 0
   aqto_defaults: 0
   aqto_layout_builder_styles: 0
