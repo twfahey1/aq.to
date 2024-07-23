@@ -1,0 +1,12 @@
+<?php
+
+
+function neon_sign_theme() {
+  return [    'neon_sign_neon_light' => [
+      'variables' => [
+        'text' => NULL
+      ]
+    ],
+  
+  ];
+}

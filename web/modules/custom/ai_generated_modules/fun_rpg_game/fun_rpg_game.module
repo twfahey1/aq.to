@@ -1,0 +1,17 @@
+<?php
+
+
+function fun_rpg_game_theme() {
+  return [    'fun_rpg_game_rpg_block' => [
+      'variables' => [
+        'character' => NULL
+      ]
+    ],    'fun_rpg_game_space_shooter' => [
+      'variables' => [
+        'ship' => NULL
+      ]
+    ],
+  
+  
+  ];
+}

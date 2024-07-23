@@ -1,0 +1,12 @@
+<?php
+
+
+function pong_game_theme() {
+  return [    'pong_game_pong_game_block' => [
+      'variables' => [
+        'game_canvas' => NULL
+      ]
+    ],
+  
+  ];
+}

@@ -1,0 +1,5 @@
+name: 'neon_sign'
+type: module
+description: 'A module'
+core_version_requirement: 10.x
+package: 'Custom'

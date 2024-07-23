@@ -1,0 +1,9 @@
+
+fun_rpg_game_rpg_block:
+  js:
+    https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js: {}
+
+fun_rpg_game_space_shooter:
+  js:
+    https://cdn.jsdelivr.net/npm/alpinejs@3.2.1/dist/cdn.min.js: {}
+    https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js: {}
