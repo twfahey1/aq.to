@@ -26,7 +26,6 @@ settings:
       - numberedList
       - '|'
       - drupalMedia
-      - paragraphs
       - blockQuote
       - insertTable
       - horizontalLine
