@@ -37,7 +37,7 @@ jobs:
           # Next, lets chmod things like web/sites/default, web/sites/default/services.yml, web/sites/default/settings.default.php, to be writable so the git pull and subsequent composer updates dont weirdly fail
           chmod -R 777 web/sites/default
           # Now lets git pull and composer install
-          git clean -rf
+          git clean -df
           git reset --hard
           git checkout main
           git pull
