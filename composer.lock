@@ -9390,12 +9390,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twfahey1/aqto_ai_core.git",
-                "reference": "ccb3016bf7a499749441e3074c5f7290b54424f1"
+                "reference": "5276dc4c5bad004f1736c82e76bfb4577b0ea7a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twfahey1/aqto_ai_core/zipball/ccb3016bf7a499749441e3074c5f7290b54424f1",
-                "reference": "ccb3016bf7a499749441e3074c5f7290b54424f1",
+                "url": "https://api.github.com/repos/twfahey1/aqto_ai_core/zipball/5276dc4c5bad004f1736c82e76bfb4577b0ea7a9",
+                "reference": "5276dc4c5bad004f1736c82e76bfb4577b0ea7a9",
                 "shasum": ""
             },
             "default-branch": true,
@@ -9420,7 +9420,7 @@
                 "issues": "https://github.com/twfahey1/aqto_ai_core/issues",
                 "source": "https://github.com/twfahey1/aqto_ai_core/tree/main"
             },
-            "time": "2024-07-23T22:30:17+00:00"
+            "time": "2024-07-24T00:20:22+00:00"
         },
         {
             "name": "twfahey1/aqto_ajax_loader",
