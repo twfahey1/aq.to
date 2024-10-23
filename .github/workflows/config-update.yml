@@ -177,6 +177,7 @@ jobs:
           # Next, lets chmod things like web/sites/default, web/sites/default/services.yml, web/sites/default/settings.default.php, to be writable so the git pull and subsequent composer updates dont weirdly fail
           chmod -R 777 web/sites/default
           git pull
+          rm -rf vendor
           composer install --no-progress --no-interaction 
           # Do a sql-dump to a folder on server /srv/users/aqto-dev/apps/aqto-dev/backups that we'll replace on each deploy.
           # This way we can always revert to the last known good state.
