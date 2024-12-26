@@ -107,6 +107,10 @@ jobs:
           # Get our git setup for the commits ahead.
           git config --global user.name "aqto-auto"
           git config --global user.email "tyler@tylerfahey.com"
+
+          # Get the current environment to a clean state
+          git reset --hard
+          git clean -fd
       
           # Drop the fresh install db and import the live site dump.
           ./vendor/bin/drush sql-drop -y
