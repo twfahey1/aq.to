@@ -109,6 +109,7 @@ jobs:
           git config --global user.email "tyler@tylerfahey.com"
 
           # Get the current environment to a clean state
+          sudo chown -R $(whoami):$(whoami) web/
           git reset --hard
           git clean -fd
       
