@@ -35,7 +35,7 @@
       "topfloor/composer-cleanup-vcs-dirs": true
     },
     "platform": {
-      "php": "8.2.12"
+      "php": "8.3"
     }
   },
   "autoload": {
